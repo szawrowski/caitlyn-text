@@ -34,7 +34,7 @@ using Sequence = std::basic_string<CharT>;
 template <typename CharT>
 using SequenceBuilder = std::basic_ostringstream<CharT>;
 
-}  // namespace unicode
-}  // namespace cait
+} // namespace unicode
+} // namespace cait
 
-#endif  // CAITLYN_TEXT_UNICODE_TYPES_H_
+#endif // CAITLYN_TEXT_UNICODE_TYPES_H_

@@ -35,7 +35,7 @@ inline RawByte MakeRawByte(const CodePoint value) {
   return static_cast<RawByte>(value);
 }
 
-}  // namespace unicode
-}  // namespace cait
+} // namespace unicode
+} // namespace cait
 
-#endif  // CAITLYN_TEXT_UNICODE_UTILITY_H_
+#endif // CAITLYN_TEXT_UNICODE_UTILITY_H_

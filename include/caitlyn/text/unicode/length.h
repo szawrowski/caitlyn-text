@@ -25,37 +25,37 @@ namespace unicode {
 
 inline size_t GetLength(const CodePoint code_point) {
   if (code_point <= 0x0000007F) {
-    return 1;  // 0xxxxxxx
+    return 1; // 0xxxxxxx
   }
   if (code_point <= 0x000007FF) {
-    return 2;  // 110xxxxx 10xxxxxx
+    return 2; // 110xxxxx 10xxxxxx
   }
   if (code_point <= 0x0000FFFF) {
-    return 3;  // 1110xxxx 10xxxxxx 10xxxxxx
+    return 3; // 1110xxxx 10xxxxxx 10xxxxxx
   }
   if (code_point <= 0x0010FFFF) {
-    return 4;  // 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+    return 4; // 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
   }
   throw std::invalid_argument{"Invalid code point"};
 }
 
 inline size_t CalculateLength(const Byte lead) {
   if ((lead & 0x80) == 0x00) {
-    return 1;  // 0xxxxxxx
+    return 1; // 0xxxxxxx
   }
   if ((lead & 0xE0) == 0xC0) {
-    return 2;  // 110xxxxx 10xxxxxx
+    return 2; // 110xxxxx 10xxxxxx
   }
   if ((lead & 0xF0) == 0xE0) {
-    return 3;  // 1110xxxx 10xxxxxx 10xxxxxx
+    return 3; // 1110xxxx 10xxxxxx 10xxxxxx
   }
   if ((lead & 0xF8) == 0xF0) {
-    return 4;  // 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+    return 4; // 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
   }
   throw std::invalid_argument{"Invalid lead byte"};
 }
 
-}  // namespace unicode
-}  // namespace cait
+} // namespace unicode
+} // namespace cait
 
-#endif  // CAITLYN_TEXT_UNICODE_LENGTH_H_
+#endif // CAITLYN_TEXT_UNICODE_LENGTH_H_

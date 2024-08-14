@@ -24,4 +24,4 @@
 #include "caitlyn/text/unicode/types.h"
 #include "caitlyn/text/unicode/utility.h"
 
-#endif  // CAITLYN_TEXT_UNICODE_H_
+#endif // CAITLYN_TEXT_UNICODE_H_

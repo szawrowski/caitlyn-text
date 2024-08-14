@@ -92,7 +92,7 @@ inline Sequence<char> FromCodePoint(const Byte value) {
   return FromCodePoint(MakeCodePoint(value));
 }
 
-}  // namespace unicode
-}  // namespace cait
+} // namespace unicode
+} // namespace cait
 
-#endif  // CAITLYN_TEXT_UNICODE_CONVERSION_H_
+#endif // CAITLYN_TEXT_UNICODE_CONVERSION_H_

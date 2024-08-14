@@ -20,4 +20,4 @@
 
 #include "caitlyn/text/unicode.h"
 
-#endif  // CAITLYN_TEXT_H_
+#endif // CAITLYN_TEXT_H_
